@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w, .item11-w, .item12-w, .item14-w' ).click(function(event){
+    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w, .item11-w, .item12-w, .item14-w, .item2-8-w, .item2-9-w, .item2-10-w' ).click(function(event){
         $target = $(event.target);
             $target.addClass('wrong-answer1');
         var wrong = document.createElement('audio');
@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r, .item11-r, .item12-r, .item13-r, .item14-r').click(function(event){
+    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r, .item11-r, .item12-r, .item13-r, .item14-r, .item2-8-r, .item2-9-r, .item2-10-r').click(function(event){
         $target = $(event.target);
             $target.addClass('correct-answer1');
             var right = document.createElement('audio');
@@ -267,5 +267,35 @@ $(document).ready(function(){
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
+    });
+  });
+
+$(document).ready(function(){
+    $(".reveal2-8").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+        $(".item2-8-r").addClass('correct-answer1');
+        $(".item2-8-w").addClass('wrong-answer1');
+    });
+  });
+
+$(document).ready(function(){
+    $(".reveal2-9").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+        $(".item2-9-r").addClass('correct-answer1');
+        $(".item2-9-w").addClass('wrong-answer1');
+    });
+  });
+
+  $(document).ready(function(){
+    $(".reveal2-10").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+        $(".item2-10-r").addClass('correct-answer1');
+        $(".item2-10-w").addClass('wrong-answer1');
     });
   });
