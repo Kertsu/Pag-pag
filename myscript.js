@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w' ).click(function(event){
+    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w, .item11-w' ).click(function(event){
         $target = $(event.target);
             $target.addClass('wrong-answer1');
         var wrong = document.createElement('audio');
@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r').click(function(event){
+    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r, .item11-r').click(function(event){
         $target = $(event.target);
             $target.addClass('correct-answer1');
             var right = document.createElement('audio');
@@ -143,6 +143,16 @@ $(document).ready(function(){
       $(".item10-w").addClass('wrong-answer1');
     });
   });
+  $(document).ready(function(){
+    $(".reveal11").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".mod").text($('.mod').text().replace('kalayaan bilang isang indibiduwal', 'karunungan'))
+      $(".item11-r").addClass('correct-answer1');
+      $(".item11-w").addClass('wrong-answer1');
+    });
+  });
 
 //   PAGE 2
 
@@ -190,9 +200,36 @@ $(document).ready(function(){
         obj.play()
     });
   });
+
+
 $(document).ready(function(){
     $(".reveal2-5").click(function(){
-      $(".identification5").text('1998');
+      $(".identification5").text('hasik');
+        var right = document.createElement('audio');
+        right.src = '/right.mp3';
+        right.play();
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+    });
+  });
+
+
+$(document).ready(function(){
+    $(".reveal2-6").click(function(){
+      $(".identification6").text('wisik');
+        var right = document.createElement('audio');
+        right.src = '/right.mp3';
+        right.play();
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+    });
+  });
+
+$(document).ready(function(){
+    $(".reveal2-7").click(function(){
+      $(".identification7").text('1998');
         var right = document.createElement('audio');
         right.src = '/right.mp3';
         right.play();
