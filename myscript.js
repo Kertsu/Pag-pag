@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w, .item11-w' ).click(function(event){
+    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w, .item11-w, .item12-w, .item14-w' ).click(function(event){
         $target = $(event.target);
             $target.addClass('wrong-answer1');
         var wrong = document.createElement('audio');
@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r, .item11-r').click(function(event){
+    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r, .item11-r, .item12-r, .item13-r, .item14-r').click(function(event){
         $target = $(event.target);
             $target.addClass('correct-answer1');
             var right = document.createElement('audio');
@@ -143,14 +143,45 @@ $(document).ready(function(){
       $(".item10-w").addClass('wrong-answer1');
     });
   });
+
   $(document).ready(function(){
     $(".reveal11").click(function(){
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
-      $(".mod").text($('.mod').text().replace('kalayaan bilang isang indibiduwal', 'karunungan'))
+      $(".mod1").text($('.mod1').text().replace('pagsagot', 'pagtatanong'))
       $(".item11-r").addClass('correct-answer1');
       $(".item11-w").addClass('wrong-answer1');
+    });
+  });
+
+  $(document).ready(function(){
+    $(".reveal12").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".item12-r").addClass('correct-answer1');
+      $(".item12-w").addClass('wrong-answer1');
+    });
+  });
+
+  $(document).ready(function(){
+    $(".reveal13").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".item13-r").addClass('correct-answer1');
+      $(".item13-w").addClass('wrong-answer1');
+    });
+  });
+
+  $(document).ready(function(){
+    $(".reveal14").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".item14-r").addClass('correct-answer1');
+      $(".item14-w").addClass('wrong-answer1');
     });
   });
 
