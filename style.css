@@ -182,7 +182,7 @@ body{
 }
 
 .end h1{
-    background-image: linear-gradient(rgb(104, 104, 255), rgba(75, 240, 97, 0.973));
+    background-image: linear-gradient(rgb(242, 104, 255), rgba(255, 225, 57, 0.973));
     position: absolute;
     padding: 1rem;
     text-align: center;
