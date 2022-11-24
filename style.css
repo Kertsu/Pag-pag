@@ -180,3 +180,15 @@ body{
     border-radius: 5%;
     font-weight: 600;
 }
+
+.end h1{
+    background-image: linear-gradient(rgba(104, 104, 255, 0.623), rgba(75, 240, 97, 0.527));
+    position: absolute;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 7rem;
+    left: 0;
+    top: 12rem;
+    color:  rgba(76, 245, 70, 0.719);
+}

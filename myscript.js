@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w').click(function(event){
+    $('.item1-w, .item2-w, .item3-w, .item4-w, .item5-w, .item6-w, .item-i-w, .item8-w, .item9-w, .item10-w' ).click(function(event){
         $target = $(event.target);
             $target.addClass('wrong-answer1');
         var wrong = document.createElement('audio');
@@ -33,12 +33,18 @@ $(document).ready(function(){
         wrong.play();
     });
 });
+$(document).ready(function(){
+    $('.item1-r, .item2-r, .item3-r, .item4-r, .item5-r, .item6-r, .item-i-r, .item8-r, .item9-r, .item10-r').click(function(event){
+        $target = $(event.target);
+            $target.addClass('correct-answer1');
+            var right = document.createElement('audio');
+            right.src = '/right.mp3';
+            right.play();
+    });
+});
 
 $(document).ready(function(){
     $(".reveal1").click(function(){
-        var right = document.createElement('audio');
-        right.src = '/right.mp3';
-        right.play();
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
@@ -49,9 +55,6 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".reveal2").click(function(){
-        var right = document.createElement('audio');
-        right.src = '/right.mp3';
-        right.play();
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
@@ -62,9 +65,6 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".reveal3").click(function(){
-        var right = document.createElement('audio');
-        right.src = '/right.mp3';
-        right.play();
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
@@ -75,9 +75,6 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".reveal4").click(function(){
-        var right = document.createElement('audio');
-        right.src = '/right.mp3';
-        right.play();
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
@@ -88,9 +85,6 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".reveal5").click(function(){
-        var right = document.createElement('audio');
-        right.src = '/right.mp3';
-        right.play();
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
@@ -101,14 +95,52 @@ $(document).ready(function(){
 
   $(document).ready(function(){
     $(".reveal6").click(function(){
-        var right = document.createElement('audio');
-        right.src = '/right.mp3';
-        right.play();
         var obj = document.createElement('audio');
         obj.src = '/applause.mp3';
         obj.play()
       $(".item6-r").addClass('correct-answer1');
       $(".item6-w").addClass('wrong-answer1');
+    });
+  });
+
+  $(document).ready(function(){
+    $(".reveal-f").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".mod").text($('.mod').text().replace('kalayaan bilang isang indibiduwal', 'karunungan'))
+      $(".item-i-r").addClass('correct-answer1');
+      $(".item-i-w").addClass('wrong-answer1');
+    });
+  });
+  $(document).ready(function(){
+    $(".reveal8").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".mod").text($('.mod').text().replace('kalayaan bilang isang indibiduwal', 'karunungan'))
+      $(".item8-r").addClass('correct-answer1');
+      $(".item8-w").addClass('wrong-answer1');
+    });
+  });
+  $(document).ready(function(){
+    $(".reveal9").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".mod").text($('.mod').text().replace('kalayaan bilang isang indibiduwal', 'karunungan'))
+      $(".item9-r").addClass('correct-answer1');
+      $(".item9-w").addClass('wrong-answer1');
+    });
+  });
+  $(document).ready(function(){
+    $(".reveal10").click(function(){
+        var obj = document.createElement('audio');
+        obj.src = '/applause.mp3';
+        obj.play()
+      $(".mod").text($('.mod').text().replace('kalayaan bilang isang indibiduwal', 'karunungan'))
+      $(".item10-r").addClass('correct-answer1');
+      $(".item10-w").addClass('wrong-answer1');
     });
   });
 
